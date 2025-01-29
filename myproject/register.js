@@ -39,7 +39,8 @@ document.getElementById('registerForm').addEventListener('submit', function(even
       }
     })
     .catch(error => {
-      console.error('Error:', error);
+      console.error('Fetch error:', error);
       alert('An error occurred. Please try again.');
     });
+    
 });

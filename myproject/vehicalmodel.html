@@ -4,50 +4,256 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vehicle Models</title>
-    <link rel="stylesheet" href="vehicalmodel.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <div id="header-placeholder"></div>
-    <section class="vehicle-models">
-        <h2>Vehicle Models - Our rental fleet at a glance</h2>
-        <div class="container">
-            <div class="model-list">
-                <ul>
-                    <li class="active">Royal Enfield Classic 350</li>
-                    <li>Royal Enfield Himalayan</li>
-                    <li>Activa 6G</li>
-                    <li>JEEP wrangler</li>
-                    <li>Maruti swift </li>
-                    <li>Mahidra XUV 700</li>
-                </ul>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section h2 {
+    font-size: 24px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .car-cards-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .car-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    flex: 0 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .car-card img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .car-card h3 {
+    font-size: 18px;
+    color: #4a4a4a;
+  }
+  
+  .car-card .brand {
+    font-size: 14px;
+    color: #7d7d7d;
+  }
+  
+  .car-card .car-details {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #7d7d7d;
+  }
+  
+  .car-card .price {
+    font-size: 18px;
+    color: #2d89ef;
+    margin-top: 10px;
+  }
+  
+  .car-card .price span {
+    font-size: 14px;
+    color: #7d7d7d;
+  }
+</style>
+<body>
+   
+    <!-- Top Selling Cars Section -->
+    <div class="section">
+        <h2>Top Selling Cars in Bangalore</h2>
+        <div class="car-cards-wrapper">
+          <a href="car-details.html" class="car-card">
+            <h3>Fortuner</h3>
+            <p class="brand">Toyota</p>
+            <img src="images/fortuner.png" alt="Fortuner">
+            <div class="car-details">
+              <p><i class="fa fa-car"></i> Hatchback</p>
+              <p><i class="fa fa-cogs"></i> Manual</p>
+              <p><i class="fa fa-user"></i> 7 seats</p>
             </div>
-            <div class="model-details">
-                <img src="images/Royal-Enfield-Classic-350.jpg" alt="Royal Enfield Classic 350"/>
-                <div class="details">
-                    <div class="price">₹800 <span>/ per day</span></div>
-                    <ul>
-                        <li><strong>Model:</strong> Royal Enfield classic 350</li>
-                        <li><strong>Mileage:</strong> 35 kmpl</li>
-                        <li><strong>Seats:</strong> 2</li>
-                        <li><strong>Tank Capacity:</strong> 13 liters</li>
-                        <li><strong>Max Speed:</strong> 110 kmph</li>
-                        <li><strong>Riding modes:</strong> NO</li>
-                        <li><strong>Bike Color:</strong> Black</li>
-                    </ul>
-                    <button class="reserve-btn">Reserve Now</button>
-                </div>
+            <p class="price">₹2136 <span>per day</span></p>
+          </a>
+    
+          <a href="car-details.html" class="car-card">
+            <h3> Thar</h3>
+            <p class="brand">Mahindra</p>
+            <img src="images/thar.png" alt="Mahindra">
+            <div class="car-details">
+              <p><i class="fa fa-car"></i> Hatchback</p>
+              <p><i class="fa fa-cogs"></i> Manual</p>
+              <p><i class="fa fa-user"></i> 4 seats</p>
             </div>
+            <p class="price">₹2136 <span>per day</span></p>
+          </a>
+    
+          <a href="car-details.html" class="car-card">
+            <h3>Polo GT</h3>
+            <p class="brand">Volkswagen</p>
+            <img src="images/polo gt.png" alt="Santro MT">
+            <div class="car-details">
+              <p><i class="fa fa-car"></i> Hatchback</p>
+              <p><i class="fa fa-cogs"></i> Manual</p>
+              <p><i class="fa fa-user"></i> 5 seats</p>
+            </div>
+            <p class="price">₹2136 <span>per day</span></p>
+          </a>
+    
+          <a href="car-details.html" class="car-card">
+            <h3>Brezza</h3>
+            <p class="brand">Maruti suzuki</p>
+            <img src="images/brezza.png" alt="Santro MT">
+            <div class="car-details">
+              <p><i class="fa fa-car"></i> Hatchback</p>
+              <p><i class="fa fa-cogs"></i> Manual</p>
+              <p><i class="fa fa-user"></i> 5 seats</p>
+            </div>
+            <p class="price">₹2136 <span>per day</span></p>
+          </a>
+    
+          <a href="car-details.html" class="car-card">
+            <h3>innova</h3>
+            <p class="brand">Toyota</p>
+            <img src="images/innova.webp" alt="Santro MT">
+            <div class="car-details">
+              <p><i class="fa fa-car"></i> Hatchback</p>
+              <p><i class="fa fa-cogs"></i> Manual</p>
+              <p><i class="fa fa-user"></i> 7 seats</p>
+            </div>
+            <p class="price">₹2136 <span>per day</span></p>
+          </a>
+    
+    
+          <a href="car-details.html" class="car-card">
+            <h3>Nexon</h3>
+            <p class="brand">TaTa</p>
+            <img src="images/nexon.png" alt="Santro MT">
+            <div class="car-details">
+              <p><i class="fa fa-car"></i> Hatchback</p>
+              <p><i class="fa fa-cogs"></i> Manual</p>
+              <p><i class="fa fa-user"></i> 5 seats</p>
+            </div>
+            <p class="price">₹2136 <span>per day</span></p>
+          </a>
+      </div>
+    </div>
+    
+    <!-- Top Selling Bikes Section -->
+    <div class="section">
+      <h2>Top Selling Bikes in Bangalore</h2>
+      <div class="car-cards-wrapper">
+        <div class="car-card">
+          <h3>Royal Enfield Classic 350</h3>
+          <p class="brand">Royal Enfield</p>
+          <img src="images/classic350.png" alt="Royal Enfield Classic 350">
+          <div class="car-details">
+            <p><i class="fa fa-motorcycle"></i> Cruiser</p>
+            <p><i class="fa fa-cogs"></i> Manual</p>
+            <p><i class="fa fa-user"></i> 2 seats</p>
+          </div>
+          <p class="price">₹1200 <span>per day</span></p>
         </div>
-        <div class="testimonial">
-            <p>
-                “This was my first time renting from car rental. And over all it was a wonderful experience. 
-                I have no complaints. The service rep helped me find the best rental to suit my needs. 
-                I also love the fact that you guys provide luxury rentals at a great price. 
-                I will definitely rent with this company again.”
-            </p>
-            <span>- Michael Smith, Santa Barbara CA</span>
+    
+        <div class="car-card">
+          <h3>KTM 390 Duke</h3>
+          <p class="brand">KTM</p>
+          <img src="images/ktm.png" alt="KTM 390 Duke">
+          <div class="car-details">
+            <p><i class="fa fa-motorcycle"></i> Street</p>
+            <p><i class="fa fa-cogs"></i> Manual</p>
+            <p><i class="fa fa-user"></i> 2 seats</p>
+          </div>
+          <p class="price">₹900 <span>per day</span></p>
         </div>
-    </section>
+    
+        <div class="car-card">
+          <h3>Himalayan 411</h3>
+          <p class="brand">Royal Enfield</p>
+          <img src="images/himalayan.webp" alt="TVS Apache RTR 200">
+          <div class="car-details">
+            <p><i class="fa fa-motorcycle"></i> Street</p>
+            <p><i class="fa fa-cogs"></i> Manual</p>
+            <p><i class="fa fa-user"></i> 2 seats</p>
+          </div>
+          <p class="price">₹850 <span>per day</span></p>
+        </div>
+    
+        <div class="car-card">
+            <h3>TVS Apache RTR 200</h3>
+            <p class="brand">TVS</p>
+            <img src="images/apache.png" alt="TVS Apache RTR 200">
+            <div class="car-details">
+              <p><i class="fa fa-motorcycle"></i> Street</p>
+              <p><i class="fa fa-cogs"></i> Manual</p>
+              <p><i class="fa fa-user"></i> 2 seats</p>
+            </div>
+            <p class="price">₹850 <span>per day</span></p>
+          </div>
+    
+    
+          <div class="car-card">
+            <h3>GT 650</h3>
+            <p class="brand">Royal Enfield</p>
+            <img src="images/GT.png" alt="TVS Apache RTR 200">
+            <div class="car-details">
+              <p><i class="fa fa-motorcycle"></i> Street</p>
+              <p><i class="fa fa-cogs"></i> Manual</p>
+              <p><i class="fa fa-user"></i> 2 seats</p>
+            </div>
+            <p class="price">₹850 <span>per day</span></p>
+          </div>
+    
+          <div class="car-card">
+            <h3>Ntarq 125</h3>
+            <p class="brand">TVS</p>
+            <img src="images/TVS_NTorq.webp" alt="TVS Apache RTR 200">
+            <div class="car-details">
+              <p><i class="fa fa-motorcycle"></i> Street</p>
+              <p><i class="fa fa-cogs"></i> Manual</p>
+              <p><i class="fa fa-user"></i> 2 seats</p>
+            </div>
+            <p class="price">₹850 <span>per day</span></p>
+          </div>
+
+          <div class="car-card">
+            <h3>Activa 6G</h3>
+            <p class="brand">Honda</p>
+            <img src="images/activa6g.png" alt="TVS Apache RTR 200">
+            <div class="car-details">
+              <p><i class="fa fa-motorcycle"></i> Street</p>
+              <p><i class="fa fa-cogs"></i> Manual</p>
+              <p><i class="fa fa-user"></i> 2 seats</p>
+            </div>
+            <p class="price">₹850 <span>per day</span></p>
+          </div>
+      </div>
+    </div>
+    
+    </body>
     <script src="vehicalmodel.js"></script>
     <script src="headerLoader.js"></script>
 </body>
